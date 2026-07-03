@@ -42,7 +42,6 @@ int main(){
     }
 
     n=n+5;                       // Add 5 more elements to the current size.
-
     ptr=realloc(ptr,n*sizeof(int)); // Resize the previously allocated memory.
 
     for(int i=0; i<n ; i++){
