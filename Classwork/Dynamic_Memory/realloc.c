@@ -17,8 +17,6 @@ int main(){
 
         printf("No memory allocation");
         exit(0);
-
-
     }
 
     printf("Before assigining:\n");
