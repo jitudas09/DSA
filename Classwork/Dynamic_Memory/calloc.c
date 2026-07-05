@@ -4,7 +4,6 @@
 // calloc() allocates memory and initializes all elements to 0.
 
 int main() {
-
     int *ptr;
     int n;
 
