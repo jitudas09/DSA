@@ -27,7 +27,6 @@ struct Node* createNode(int value)
 
     return newNode;
 }
-
 // Preorder traversal
 // Root -> Left -> Right
 void preorder(struct Node *root)
