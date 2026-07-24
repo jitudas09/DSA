@@ -26,16 +26,17 @@ public:
     double getsalary(){
         return salary ; 
     }
-
-    
 } ;
 
 int main (){
+
     Teacher t1 ; 
+    
     t1.name = "Jitu" ; 
     t1.subject = "C++" ; 
     t1.dept = "Computer Science " ; 
     // t1.salary = 25000 ; 
+
     t1.setsalary(25000) ;
 
     cout << t1.name << endl ; 
