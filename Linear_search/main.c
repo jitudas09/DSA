@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 int linearsearch(int arr[] , int n, int key ) {
 
     for (int i = 0 ; i<n ; i++){
