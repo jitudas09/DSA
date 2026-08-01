@@ -1,15 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std ; 
 
-
-// complexity O(n*n) ; 
 void selectionsort(int arr[] , int n ){
+    bool is_sort= false ; 
 
     for ( int i = 0 ; i<n-1 ; i++){
         int smallidx= i ; 
         for (int j = i+1 ; j<n ; j++){
             if(arr[j] < arr[smallidx]) {
                 smallidx = j ; 
+                is_sort= true  ; 
+
             }
 
         }
@@ -20,6 +21,7 @@ void selectionsort(int arr[] , int n ){
         swap(arr[i], arr[smallidx]) ; 
 
     }
+    if(!is_sort) return ; 
 }
 
 
@@ -32,7 +34,7 @@ void printArray( int arr[] , int n ){
 
 int main (){
     int n = 5; 
-    int arr[n] = { 4, 1 , 5, 2 , 3} ; 
+    int arr[n] = { 1,2,3,4,5} ; 
 
     selectionsort(arr, n ) ; 
     printArray(arr,n) ; 
